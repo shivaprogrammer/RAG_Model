@@ -1,22 +1,85 @@
-# End to End RAG Project using ObjectBox and LangChain
- - In this end to end project I have built a RAG app using ObjectBox Vector Databse and LangChain. RAG techniques allow us to augment a language model's knowledge base actively, ensuring your AI can access and reason with your data and the very latest information. With ObjectBox you can do that, without the data ever needing to leave the device.
+# 🧠 RAG_Model — End-to-End Retrieval-Augmented Generation (RAG) using ObjectBox + LangChain
 
-![Streamlit Web App Interface](./images/RAG%20app%20UI.png)
+This project implements an **End-to-End Retrieval-Augmented Generation (RAG)** pipeline combining:
+- **LangChain** — for connecting retrieval and generation workflows.
+- **ObjectBox Vector Database** — for fast and persistent embedding storage.
+- **HuggingFace Embeddings** — for converting text into numerical vectors.
+- **Groq LLM (Llama 3)** — for generating intelligent, context-aware answers.
 
-## DEMO
- - You can check the project live [here](https://8512-01hwj8ynshjz7spkr595x77ec2.cloudspaces.litng.ai/)
+It allows you to upload your **own documents (e.g., research papers)**, automatically index them using vector embeddings, and query them in natural language to receive accurate answers based on the document content.
 
-## Description
-- This project showcase the implementation of an advanced RAG system that uses Objectbox vectordatabse and Groq's LLAM3 model as an llm to retrieve information from different PDF documents.
+---
 
-Steps I followed:
-1. I have used the `PyPdfDirectoryLoader` from the `langchain_community` document loader to load the PDF documents from the `us-census-data` directory.
-2. transformed each text into a chunk of `1000` using the `RecursiveCharacterTextSplitter` imported from the `langchain.text_splitter`
-3. stored the vector embeddings which were made using the `HuggingFaceBgeEmbeddings` using the `ObjectBox` vector store.
-4. setup the llm `ChatGroq` with the model name `Llama3-8b-8192`
-5. Setup `ChatPromptTemplate`
-6. Setup `vector_embedding` function to enbedd the documents and store them in the `ObjectBox` vectorstore
-7. finally created the `document_chain` and `retrieval_chain` for chaining llm to prompt and `retriever` to `document_chain` respectively
+## 📘 Table of Contents
+- [Project Overview](#-project-overview)
+- [Architecture](#-architecture)
+- [Directory Structure](#-directory-structure)
+- [Installation and Setup](#-installation-and-setup)
+- [Running the Application](#-running-the-application)
+- [How to Use the Application](#-how-to-use-the-application)
+- [Technologies Used](#-technologies-used)
+- [Code Explanation](#-code-explanation)
+- [Demo Screenshots](#-demo-screenshots)
+- [Example Queries](#-example-queries)
+- [Troubleshooting Guide](#-troubleshooting-guide)
+- [License](#-license)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
+- [Summary](#-summary)
+- [Next Steps](#-next-steps)
+
+---
+
+## 🚀 Project Overview
+
+Retrieval-Augmented Generation (RAG) combines **information retrieval** and **language generation**.
+
+Instead of relying purely on a language model’s internal knowledge, RAG retrieves **relevant passages from your uploaded documents** and uses them as additional context for response generation.
+
+---
+
+## ⚙️ Architecture
+
+### 🔹 RAG Pipeline Workflow
+
+1. **Document Ingestion**
+   - Loads your PDF documents from a specified folder.
+
+2. **Text Splitting**
+   - Breaks documents into overlapping text chunks using LangChain’s `RecursiveCharacterTextSplitter`.
+
+3. **Embedding Creation**
+   - Converts each text chunk into a numerical vector using HuggingFace’s `BGE-small-en-v1.5` model.
+
+4. **Vector Storage**
+   - Stores embeddings persistently in **ObjectBox Vector Database** for efficient retrieval.
+
+5. **Retrieval**
+   - Retrieves top similar document chunks based on your query.
+
+6. **Generation**
+   - Passes retrieved context to Groq’s **Llama 3** model, which generates a precise, context-grounded answer.
+
+---
+
+## 📂 Directory Structure
+
+```plaintext
+End-to-End-RAG-Project-using-ObjectBox-and-LangChain/
+│
+├── app/
+│   ├── app.py                # Main Streamlit application
+│   ├── utils.py              # Helper functions for embeddings & LLM
+│   ├── config.py             # Loads environment variables (.env)
+│
+├── research-papers/          # Folder containing your research papers (PDFs)
+├── objectbox/                # ObjectBox database files (auto-created)
+│
+├── requirements.txt          # Python dependencies
+├── .env                      # API keys for HuggingFace and Groq
+├── .gitignore                # Excludes sensitive files and venv
+└── README.md                 # This documentation file
+```
 
 ## Libraries Used
  - langchain==0.1.20
@@ -43,11 +106,9 @@ Steps I followed:
  9. As I have already embedded the documents you don't need to click on the `Embedd Documents` button/ But, if it's not working then you need to click on the `Embedd Documents` button and wait until the documnets are processed
  10. Enter your question from the PDFs found in the `us-census-data` directory
 
-## Collaboration
-- Collaborations are welcomed ❤️
 
-## Acknowledgments
- - I would like to thank [Krish Naik](https://www.youtube.com/@krishnaik06)
+
+
    
 ## Contact
  - LinkedIn: [Nebeyou Musie](https://www.linkedin.com/in/nebeyou-musie)
