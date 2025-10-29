@@ -8,7 +8,7 @@ load_config()
 
 # setup groq LLM
 def groq_llm():
-    llm = ChatGroq(groq_api_key=get_groq_api(), model_name='Llama3-8b-8192')
+    llm = ChatGroq(groq_api_key=get_groq_api(), model_name='llama-3.3-70b-versatile')
     return llm
 
 # setup huggingface_instruct_embedding
