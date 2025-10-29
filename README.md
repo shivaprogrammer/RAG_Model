@@ -10,6 +10,26 @@ It allows you to upload your **own documents (e.g., research papers)**, automati
 
 ---
 
+## 🔗 Demo
+
+🎥 **Live Demo:** [Click Here to View the App](https://your-demo-link-here.com)  
+*(Replace with your Streamlit Cloud / HuggingFace Spaces / server link when deployed)*
+
+---
+
+## 📸 Screenshots
+
+| 🏠 Home Interface | 💬 Query & Answer View |
+|-------------------|-----------------------|
+| ![Home Screenshot](screenshots/home_page.png) | ![Query Screenshot](screenshots/query_result.png) |
+
+> 📁 Place your screenshots in a folder named `screenshots/`:
+> ```bash
+> mkdir screenshots
+> mv ~/Downloads/home_page.png screenshots/
+> mv ~/Downloads/query_result.png screenshots/
+> ```
+
 
 
 ---
