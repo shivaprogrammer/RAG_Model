@@ -21,7 +21,7 @@ It allows you to upload your **own documents (e.g., research papers)**, automati
 
 | 🏠 Home Interface | 💬 Query & Answer View |
 |-------------------|-----------------------|
-| ![Home Screenshot](screenshots/home_page.png) | ![Query Screenshot](screenshots/query_result.png) |
+| ![Home Screenshot](images/home_page.png) | ![Query Screenshot](images/query_result.png) |
 
 > 📁 Place your screenshots in a folder named `screenshots/`:
 > ```bash
