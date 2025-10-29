@@ -10,23 +10,7 @@ It allows you to upload your **own documents (e.g., research papers)**, automati
 
 ---
 
-## 📘 Table of Contents
-- [Project Overview](#-project-overview)
-- [Architecture](#-architecture)
-- [Directory Structure](#-directory-structure)
-- [Installation and Setup](#-installation-and-setup)
-- [Running the Application](#-running-the-application)
-- [How to Use the Application](#-how-to-use-the-application)
-- [Technologies Used](#-technologies-used)
-- [Code Explanation](#-code-explanation)
-- [Demo Screenshots](#-demo-screenshots)
-- [Example Queries](#-example-queries)
-- [Troubleshooting Guide](#-troubleshooting-guide)
-- [License](#-license)
-- [Author](#-author)
-- [Acknowledgments](#-acknowledgments)
-- [Summary](#-summary)
-- [Next Steps](#-next-steps)
+
 
 ---
 
