@@ -94,25 +94,22 @@ End-to-End-RAG-Project-using-ObjectBox-and-LangChain/
  1. Prerequisites
     - Git
     - Command line familiarity
- 2. Clone the Repository: `git clone https://github.com/NebeyouMusie/End-to-End-RAG-Project-using-ObjectBox-and-LangChain.git`
+ 2. Clone the Repository: `git clone https://github.com/shivaprogrammer/RAG_Model.git`
  3. Create and Activate Virtual Environment (Recommended)
     - `python -m venv venv`
     - `source venv/bin/activate`
- 4. Navigate to the projects directory `cd ./End-to-End-RAG-Project-using-ObjectBox-and-LangChain` using your terminal
- 5. Install Libraries: `pip install -r requirements.txt`
- 6. Navigate to the app directory `cd ./app` using your terminal 
- 7. run `streamlit run app.py`
- 8. open the link displayed in the terminal on your preferred browser
- 9. As I have already embedded the documents you don't need to click on the `Embedd Documents` button/ But, if it's not working then you need to click on the `Embedd Documents` button and wait until the documnets are processed
- 10. Enter your question from the PDFs found in the `us-census-data` directory
+
+ 4. Install Libraries: `pip install -r requirements.txt`
+ 5. Navigate to the app directory `cd ./app` using your terminal 
+ 6. run `streamlit run app.py`
+ 7. open the link displayed in the terminal on your preferred browser
+ 8. As I have already embedded the documents you don't need to click on the `Embedd Documents` button/ But, if it's not working then you need to click on the `Embedd Documents` button and wait until the documnets are processed
+ 9. Enter your question from the PDFs found in the `research_papers` directory
 
 
 
 
    
-## Contact
- - LinkedIn: [Nebeyou Musie](https://www.linkedin.com/in/nebeyou-musie)
- - Gmail: nebeyoumusie@gmail.com
- - Telegram: [Nebeyou Musie](https://t.me/NebeyouMusie)
+
 
 
