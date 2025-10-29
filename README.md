@@ -25,7 +25,7 @@ It allows you to upload your **own documents (e.g., research papers)**, automati
 
 > 📁 Place your screenshots in a folder named `screenshots/`:
 > ```bash
-> mkdir screenshots
+> mkdir images
 > mv ~/Downloads/home_page.png screenshots/
 > mv ~/Downloads/query_result.png screenshots/
 > ```
